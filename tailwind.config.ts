@@ -7,6 +7,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@tremor/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -32,15 +33,16 @@ const config: Config = {
       themes: {
         light: {
           colors: {
-            secondaryBackground: "#ffffff",
-            foreground: "#11181C", // or 50 to 900 DEFAULT
+            secondaryBackground: "#1f262d",
+            foreground: "#11181C",
             primary: {
-              //... 50 to 900
-              foreground: "#FFFFFF",
+              foreground: "#ffffff",
               DEFAULT: "#006FEE",
             },
-
-            // ... rest of the colors
+            secondary: {
+              foreground: "#ffffff",
+              DEFAULT: "#98BDFF",
+            },
           },
         },
         dark: {
@@ -48,12 +50,14 @@ const config: Config = {
             secondaryBackground: "#1f262d",
             foreground: "#ECEDEE",
             primary: {
-              //... 50 to 900
-              foreground: "#1f262d",
-              DEFAULT: "#15191e",
+              foreground: "#ffffff",
+              DEFAULT: "#006FEE",
+            },
+            secondary: {
+              foreground: "#ffffff",
+              DEFAULT: "#98BDFF",
             },
           },
-          // ... rest of the colors
         },
       },
     }),

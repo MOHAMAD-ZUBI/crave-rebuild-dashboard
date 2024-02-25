@@ -70,7 +70,7 @@ const CollapsableLink = ({
                   className={`flex flex-row  hover:text-foreground px-6 py-3 text-[17px] rounded-lg duration-500 items-center gap-2 ${
                     pathname === path
                       ? "bg-content2"
-                      : "hover:bg-white/10 text-foreground/70 hover:text-foreground"
+                      : "hover:bg-content2 text-foreground/70 hover:text-foreground"
                   }`}
                 >
                   <Icon className="" />
